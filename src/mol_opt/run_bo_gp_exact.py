@@ -8,6 +8,9 @@ import random
 import numpy as np
 import pandas as pd
 import torch
+import sys
+sys.path.insert(1, '/content/dockstring/src/')
+
 from bo import acquisition_funcs, gp_bo
 from fingerprints import smiles_to_fp_array
 from gp import (

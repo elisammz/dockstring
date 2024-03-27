@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+pip install botorch rdkit dockstring
 objective_arr=(  "GFR" "F2" "PPAR-all")
 method_name="bo_gp_exact"
 max_func_calls="5000"
@@ -26,8 +27,8 @@ for target in "${objective_arr[@]}" ; do
 
             echo "Running ${target} trial ${trial}..."
 
-            PYTHONPATH="$(pwd)/src:$PYTHONPATH" ~/CodingProjects/BODock/.conda/bin/python3.10 src/mol_opt/run_${method_name}.py \
-                --dataset="./data/dockstring-dataset.tsv" \
+            PYTHONPATH="$(pwd)/src:$PYTHONPATH" python3 /content/dockstring/src/mol_opt/run_${method_name}.py \
+                --dataset="/content/dockstring/data/dockstring-dataset.tsv" \
                 --objective="${target}" \
                 --max_func_calls="${max_func_calls}" \
                 --num_cpu=8 \
@@ -38,8 +39,8 @@ for target in "${objective_arr[@]}" ; do
                 --bo_batch_size=5 \
                 \
                 --output_path="${output_path}" \
-                --extra_output_path="${extra_output}" \
-                &> "${log_dir}/${method_name}-${target}_trial${trial}.log"
+                --extra_output_path="${extra_output}" #&> "${log_dir}/${method_name}-${target}_trial${trial}.log"
+                echo $log_dir 
 
 
         fi
