@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/alxfgh/CodingProjects/dockstring/src/mol_opt/run_bo_gp_exact.py", line 11, in <module>
+    from bo import acquisition_funcs, gp_bo
+  File "/home/alxfgh/CodingProjects/dockstring/src/bo/gp_bo.py", line 12, in <module>
+    from gp import TanimotoGP, batch_predict_mu_var_numpy
+  File "/home/alxfgh/CodingProjects/dockstring/src/gp/__init__.py", line 2, in <module>
+    from .gp_utils import (
+ImportError: cannot import name 'it_gp_hyperparameters' from 'gp.gp_utils' (/home/alxfgh/CodingProjects/dockstring/src/gp/gp_utils.py)

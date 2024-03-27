@@ -1,0 +1,137 @@
+2024-03-26 20:19:26,421 - gp_bo - INFO - Starting GP BO
+2024-03-26 20:19:26,429 - gp_bo - DEBUG - Starting cache made, has size 260143
+2024-03-26 20:19:26,757 - gp_bo - INFO - Top 10 known starting scores:
+#1=12.200, #2=12.200, #3=12.100, #4=12.100, #5=12.100, #6=12.100, #7=12.100, #8=12.000, #9=12.000, #10=12.000
+2024-03-26 20:19:26,774 - gp_bo - DEBUG - SMILES pool created, size=260143
+2024-03-26 20:19:26,774 - gp_bo - DEBUG - Plan to condition GP on 5000 training points.
+2024-03-26 20:19:26,790 - gp_bo - DEBUG - Scoring training points.
+2024-03-26 20:19:26,800 - gp_bo - DEBUG - Scoring of training points done.
+2024-03-26 20:19:27,702 - gp_bo - DEBUG - Created initial GP training data
+2024-03-26 20:19:27,702 - gp_bo - INFO - Start iter 1
+2024-03-26 20:19:28,344 - gp_bo - DEBUG - Maximizing acqusition function with 1000 starting SMILES.
+2024-03-26 20:20:06,954 - gp_bo - DEBUG - Acquisition function optimized, 11993 evaluated.
+2024-03-26 20:20:06,954 - gp_bo - DEBUG - Top 10 acquisition function values: 19.20, 19.03, 18.97, 18.96, 18.95, 18.94, 18.85, 18.84, 18.81, 18.76
+2024-03-26 20:20:06,956 - gp_bo - DEBUG - 10993 smiles added to pool (size went from 260143 to 271136
+2024-03-26 20:20:06,956 - gp_bo - DEBUG - Batch created, size 5/5
+2024-03-26 20:20:07,425 - gp_bo - DEBUG - Made mean/var predictions for new SMILES batch
+2024-03-26 20:20:07,425 - gp_bo - DEBUG - Evaluating scoring function on SMILES batch of size 5.
+2024-03-26 20:24:13,696 - gp_bo - DEBUG - Scoring complete.
+DEBUG:gp_bo:Scoring complete.
+2024-03-26 20:24:13,717 - gp_bo - DEBUG - GP training data reset, now of size 5005
+DEBUG:gp_bo:GP training data reset, now of size 5005
+2024-03-26 20:24:14,812 - gp_bo - DEBUG - Full batch results:
+[{'bo_iter': 1,
+  'predictions': {'acq': 19.20255470275879,
+                  'mu': 12.848052978515625,
+                  'pred_error_in_stds': 0.8624641112982392,
+                  'std': 0.6354501843452454},
+  'predictions_after_fit': {'mu': 12.618709564208984,
+                            'std': 0.5047658085823059},
+  'raw_score': {'F2': -12.3},
+  'smiles': 'N=C(N)c1ccc2c(c1)C[C@]1(Cc3cn(N=C4C(=O)N(Oc5nc(-c6ccccn6)n[nH]5)c5ccccc54)c4ccccc34)Oc3c(c(=O)oc4ccc5c(c34)CCCC5)C2O1',
+  'transformed_score': 12.3},
+ {'bo_iter': 1,
+  'predictions': {'acq': 19.030839920043945,
+                  'mu': 12.63904094696045,
+                  'pred_error_in_stds': 0.5304311401144747,
+                  'std': 0.6391799449920654},
+  'predictions_after_fit': {'mu': 12.449724197387695,
+                            'std': 0.4883950650691986},
+  'raw_score': {'F2': -12.3},
+  'smiles': 'CN1C(=O)/C(=N/NC(=O)c2cccc(C(=O)[C@]34C=CC(=O)CC3=CC(NC(=O)c3[nH]n5c(-c6ccc7ccccc7c6)nc6ccccc6c35)=CC4)c2)c2ccccc21',
+  'transformed_score': 12.3},
+ {'bo_iter': 1,
+  'predictions': {'acq': 18.968122482299805,
+                  'mu': 12.622882843017578,
+                  'pred_error_in_stds': 3.0304339326920333,
+                  'std': 0.6345239281654358},
+  'predictions_after_fit': {'mu': 11.904467582702637,
+                            'std': 0.5036720633506775},
+  'raw_score': {'F2': -10.7},
+  'smiles': 'CC(C)(Oc1cccc(NC(=O)c2cccc([C@@]3(C4=COCC=N4)C(=O)Nc4cc(N)ccc43)c2)c1)n1cc(C2=CCCCC2)c2ccccc21',
+  'transformed_score': 10.7},
+ {'bo_iter': 1,
+  'predictions': {'acq': 18.956130981445312,
+                  'mu': 12.556812286376953,
+                  'pred_error_in_stds': -0.8488211786676472,
+                  'std': 0.639931857585907},
+  'predictions_after_fit': {'mu': 12.742257118225098,
+                            'std': 0.5072500109672546},
+  'raw_score': {'F2': -13.1},
+  'smiles': 'Cc1cc2cc(NC(=NCl)NC(=O)C3C=C(c4cn(C(=O)c5ccc6c(c5)c(=O)n(-c5ccnc(F)c5)c5[n+]6Cc6ccccc6-5)c5ccccc45)C=CC3)ccc2o1',
+  'transformed_score': 13.1},
+ {'bo_iter': 1,
+  'predictions': {'acq': 18.9454345703125,
+                  'mu': 12.364288330078125,
+                  'pred_error_in_stds': 0.4015843754941669,
+                  'std': 0.6581140756607056},
+  'predictions_after_fit': {'mu': 12.19779109954834, 'std': 0.4985489547252655},
+  'raw_score': {'F2': -12.1},
+  'smiles': 'O=C1C=C[C@]2(C(=O)c3cccc(C(=O)Nn4cc(C5=CC=C[SH]=C5)c5ccccc54)c3)CC=C(NC(=O)c3[nH]n4c(-c5ccc6ccccc6c5)nc5ccccc5c34)C=C2C1',
+  'transformed_score': 12.1}]
+DEBUG:gp_bo:Full batch results:
+[{'bo_iter': 1,
+  'predictions': {'acq': 19.20255470275879,
+                  'mu': 12.848052978515625,
+                  'pred_error_in_stds': 0.8624641112982392,
+                  'std': 0.6354501843452454},
+  'predictions_after_fit': {'mu': 12.618709564208984,
+                            'std': 0.5047658085823059},
+  'raw_score': {'F2': -12.3},
+  'smiles': 'N=C(N)c1ccc2c(c1)C[C@]1(Cc3cn(N=C4C(=O)N(Oc5nc(-c6ccccn6)n[nH]5)c5ccccc54)c4ccccc34)Oc3c(c(=O)oc4ccc5c(c34)CCCC5)C2O1',
+  'transformed_score': 12.3},
+ {'bo_iter': 1,
+  'predictions': {'acq': 19.030839920043945,
+                  'mu': 12.63904094696045,
+                  'pred_error_in_stds': 0.5304311401144747,
+                  'std': 0.6391799449920654},
+  'predictions_after_fit': {'mu': 12.449724197387695,
+                            'std': 0.4883950650691986},
+  'raw_score': {'F2': -12.3},
+  'smiles': 'CN1C(=O)/C(=N/NC(=O)c2cccc(C(=O)[C@]34C=CC(=O)CC3=CC(NC(=O)c3[nH]n5c(-c6ccc7ccccc7c6)nc6ccccc6c35)=CC4)c2)c2ccccc21',
+  'transformed_score': 12.3},
+ {'bo_iter': 1,
+  'predictions': {'acq': 18.968122482299805,
+                  'mu': 12.622882843017578,
+                  'pred_error_in_stds': 3.0304339326920333,
+                  'std': 0.6345239281654358},
+  'predictions_after_fit': {'mu': 11.904467582702637,
+                            'std': 0.5036720633506775},
+  'raw_score': {'F2': -10.7},
+  'smiles': 'CC(C)(Oc1cccc(NC(=O)c2cccc([C@@]3(C4=COCC=N4)C(=O)Nc4cc(N)ccc43)c2)c1)n1cc(C2=CCCCC2)c2ccccc21',
+  'transformed_score': 10.7},
+ {'bo_iter': 1,
+  'predictions': {'acq': 18.956130981445312,
+                  'mu': 12.556812286376953,
+                  'pred_error_in_stds': -0.8488211786676472,
+                  'std': 0.639931857585907},
+  'predictions_after_fit': {'mu': 12.742257118225098,
+                            'std': 0.5072500109672546},
+  'raw_score': {'F2': -13.1},
+  'smiles': 'Cc1cc2cc(NC(=NCl)NC(=O)C3C=C(c4cn(C(=O)c5ccc6c(c5)c(=O)n(-c5ccnc(F)c5)c5[n+]6Cc6ccccc6-5)c5ccccc45)C=CC3)ccc2o1',
+  'transformed_score': 13.1},
+ {'bo_iter': 1,
+  'predictions': {'acq': 18.9454345703125,
+                  'mu': 12.364288330078125,
+                  'pred_error_in_stds': 0.4015843754941669,
+                  'std': 0.6581140756607056},
+  'predictions_after_fit': {'mu': 12.19779109954834, 'std': 0.4985489547252655},
+  'raw_score': {'F2': -12.1},
+  'smiles': 'O=C1C=C[C@]2(C(=O)c3cccc(C(=O)Nn4cc(C5=CC=C[SH]=C5)c5ccccc54)c3)CC=C(NC(=O)c3[nH]n4c(-c5ccc6ccccc6c5)nc5ccccc5c34)C=C2C1',
+  'transformed_score': 12.1}]
+2024-03-26 20:24:14,814 - gp_bo - INFO - End of iter 1. Status update:
+	Batch scores (transformed): 12.3, 12.3, 10.7, 13.1, 12.1
+	Batch acquisition function values: 19.20, 19.03, 18.97, 18.96, 18.95
+	Acquisition function values of top known smiles : 15.70, 15.25, 15.51, 15.82, 14.99, 15.09, 14.91, 15.20, 15.39, 15.06
+	Top new scores so far: #1=13.100, #2=12.300, #3=12.300, #4=12.100, #5=10.700
+	Function calls so far: 5
+INFO:gp_bo:End of iter 1. Status update:
+	Batch scores (transformed): 12.3, 12.3, 10.7, 13.1, 12.1
+	Batch acquisition function values: 19.20, 19.03, 18.97, 18.96, 18.95
+	Acquisition function values of top known smiles : 15.70, 15.25, 15.51, 15.82, 14.99, 15.09, 14.91, 15.20, 15.39, 15.06
+	Top new scores so far: #1=13.100, #2=12.300, #3=12.300, #4=12.100, #5=10.700
+	Function calls so far: 5
+2024-03-26 20:24:14,814 - gp_bo - INFO - Start iter 2
+INFO:gp_bo:Start iter 2
+2024-03-26 20:24:15,459 - gp_bo - DEBUG - Maximizing acqusition function with 1000 starting SMILES.
+DEBUG:gp_bo:Maximizing acqusition function with 1000 starting SMILES.

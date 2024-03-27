@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-objective_arr=( "F2" "PPAR-all" "GFR" )
+objective_arr=(  "GFR" "F2" "PPAR-all")
 method_name="bo_gp_exact"
 max_func_calls="5000"
 

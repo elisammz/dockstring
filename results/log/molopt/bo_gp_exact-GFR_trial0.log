@@ -1,0 +1,175 @@
+2024-03-26 20:25:04,725 - gp_bo - INFO - Starting GP BO
+2024-03-26 20:25:04,733 - gp_bo - DEBUG - Starting cache made, has size 260143
+2024-03-26 20:25:05,431 - gp_bo - INFO - Top 10 known starting scores:
+#1=13.800, #2=13.400, #3=13.300, #4=13.300, #5=13.300, #6=12.800, #7=12.800, #8=12.700, #9=12.700, #10=12.700
+2024-03-26 20:25:05,451 - gp_bo - DEBUG - SMILES pool created, size=260143
+2024-03-26 20:25:05,451 - gp_bo - DEBUG - Plan to condition GP on 5000 training points.
+2024-03-26 20:25:05,467 - gp_bo - DEBUG - Scoring training points.
+2024-03-26 20:25:05,486 - gp_bo - DEBUG - Scoring of training points done.
+2024-03-26 20:25:06,318 - gp_bo - DEBUG - Created initial GP training data
+2024-03-26 20:25:06,318 - gp_bo - INFO - Start iter 1
+2024-03-26 20:25:07,330 - gp_bo - DEBUG - Maximizing acqusition function with 1000 starting SMILES.
+2024-03-26 20:25:44,263 - gp_bo - DEBUG - Acquisition function optimized, 12451 evaluated.
+2024-03-26 20:25:44,263 - gp_bo - DEBUG - Top 10 acquisition function values: 19.69, 19.61, 19.60, 19.58, 19.57, 19.49, 19.43, 19.41, 19.39, 19.33
+2024-03-26 20:25:44,266 - gp_bo - DEBUG - 11451 smiles added to pool (size went from 260143 to 271594
+2024-03-26 20:25:44,266 - gp_bo - DEBUG - Batch created, size 5/5
+2024-03-26 20:25:44,717 - gp_bo - DEBUG - Made mean/var predictions for new SMILES batch
+2024-03-26 20:25:44,718 - gp_bo - DEBUG - Evaluating scoring function on SMILES batch of size 5.
+2024-03-26 20:32:40,713 - gp_bo - DEBUG - Scoring complete.
+DEBUG:gp_bo:Scoring complete.
+2024-03-26 20:32:40,727 - gp_bo - DEBUG - GP training data reset, now of size 5005
+DEBUG:gp_bo:GP training data reset, now of size 5005
+2024-03-26 20:32:41,797 - gp_bo - DEBUG - Full batch results:
+[{'bo_iter': 1,
+  'predictions': {'acq': 19.693349838256836,
+                  'mu': 13.37950325012207,
+                  'pred_error_in_stds': 3.4519423053758027,
+                  'std': 0.6313846111297607},
+  'predictions_after_fit': {'mu': 12.711400985717773,
+                            'std': 0.5004668235778809},
+  'raw_score': {'EGFR': -10.8, 'FGFR1': -11.2, 'KDR': -8.9},
+  'smiles': 'COC(F)(F)c1ccc2c(c1-c1ccc3c(c1)/C(=C/c1cc(-c4cccc5c4CCCC5)c[nH]1)C(=O)N3)CC(c1nc3nccc(O)n3n1)CC2',
+  'transformed_score': 11.2},
+ {'bo_iter': 1,
+  'predictions': {'acq': 19.612573623657227,
+                  'mu': 13.193840026855469,
+                  'pred_error_in_stds': -4.371828478944868,
+                  'std': 0.641873300075531},
+  'predictions_after_fit': {'mu': 14.455450057983398,
+                            'std': 0.48132196068763733},
+  'raw_score': {'EGFR': nan, 'FGFR1': nan, 'KDR': nan},
+  'smiles': 'CC(C)=C(O)C(=N)c1ccc2ccc(NC3=C[C@@H](O)C4C(=C3)NC(=O)C4=Cc3cc(-c4cccc5c4CCCC5)c[nH]3)cc2c1',
+  'transformed_score': 16.0},
+ {'bo_iter': 1,
+  'predictions': {'acq': 19.604755401611328,
+                  'mu': 13.252769470214844,
+                  'pred_error_in_stds': -4.324995481784413,
+                  'std': 0.6351984739303589},
+  'predictions_after_fit': {'mu': 14.484106063842773,
+                            'std': 0.47750070691108704},
+  'raw_score': {'EGFR': nan, 'FGFR1': nan, 'KDR': nan},
+  'smiles': 'CC(C)=C(O)C(=N)c1ccc2ccc(NC3=NCC4C(=C3)NC(=O)C4=Cc3cc(-c4cccc5c4CCCC5)c[nH]3)cc2c1',
+  'transformed_score': 16.0},
+ {'bo_iter': 1,
+  'predictions': {'acq': 19.575637817382812,
+                  'mu': 13.455090522766113,
+                  'pred_error_in_stds': 4.0112276554882556,
+                  'std': 0.6120546460151672},
+  'predictions_after_fit': {'mu': 12.615142822265625,
+                            'std': 0.4925561547279358},
+  'raw_score': {'EGFR': -12.2, 'FGFR1': -11.0, 'KDR': -13.0},
+  'smiles': 'C=C1C(=O)Oc2c1cn1[nH]c(-c3cccc(-c4ccc5ccc(C(=N)N)cc5c4)c3)cc21',
+  'transformed_score': 11.0},
+ {'bo_iter': 1,
+  'predictions': {'acq': 19.565860748291016,
+                  'mu': 13.319511413574219,
+                  'pred_error_in_stds': 2.2725470147845876,
+                  'std': 0.6246345639228821},
+  'predictions_after_fit': {'mu': 12.81908893585205,
+                            'std': 0.49765148758888245},
+  'raw_score': {'EGFR': -12.2, 'FGFR1': -11.9, 'KDR': -13.8},
+  'smiles': 'O=C(Nc1ccc(-c2cccc(-c3cc(-c4cccc5c4CCCC5)c[nH]3)c2)cc1)C1=CCN(C2N=CC=C(F)O2)C1',
+  'transformed_score': 11.9}]
+DEBUG:gp_bo:Full batch results:
+[{'bo_iter': 1,
+  'predictions': {'acq': 19.693349838256836,
+                  'mu': 13.37950325012207,
+                  'pred_error_in_stds': 3.4519423053758027,
+                  'std': 0.6313846111297607},
+  'predictions_after_fit': {'mu': 12.711400985717773,
+                            'std': 0.5004668235778809},
+  'raw_score': {'EGFR': -10.8, 'FGFR1': -11.2, 'KDR': -8.9},
+  'smiles': 'COC(F)(F)c1ccc2c(c1-c1ccc3c(c1)/C(=C/c1cc(-c4cccc5c4CCCC5)c[nH]1)C(=O)N3)CC(c1nc3nccc(O)n3n1)CC2',
+  'transformed_score': 11.2},
+ {'bo_iter': 1,
+  'predictions': {'acq': 19.612573623657227,
+                  'mu': 13.193840026855469,
+                  'pred_error_in_stds': -4.371828478944868,
+                  'std': 0.641873300075531},
+  'predictions_after_fit': {'mu': 14.455450057983398,
+                            'std': 0.48132196068763733},
+  'raw_score': {'EGFR': nan, 'FGFR1': nan, 'KDR': nan},
+  'smiles': 'CC(C)=C(O)C(=N)c1ccc2ccc(NC3=C[C@@H](O)C4C(=C3)NC(=O)C4=Cc3cc(-c4cccc5c4CCCC5)c[nH]3)cc2c1',
+  'transformed_score': 16.0},
+ {'bo_iter': 1,
+  'predictions': {'acq': 19.604755401611328,
+                  'mu': 13.252769470214844,
+                  'pred_error_in_stds': -4.324995481784413,
+                  'std': 0.6351984739303589},
+  'predictions_after_fit': {'mu': 14.484106063842773,
+                            'std': 0.47750070691108704},
+  'raw_score': {'EGFR': nan, 'FGFR1': nan, 'KDR': nan},
+  'smiles': 'CC(C)=C(O)C(=N)c1ccc2ccc(NC3=NCC4C(=C3)NC(=O)C4=Cc3cc(-c4cccc5c4CCCC5)c[nH]3)cc2c1',
+  'transformed_score': 16.0},
+ {'bo_iter': 1,
+  'predictions': {'acq': 19.575637817382812,
+                  'mu': 13.455090522766113,
+                  'pred_error_in_stds': 4.0112276554882556,
+                  'std': 0.6120546460151672},
+  'predictions_after_fit': {'mu': 12.615142822265625,
+                            'std': 0.4925561547279358},
+  'raw_score': {'EGFR': -12.2, 'FGFR1': -11.0, 'KDR': -13.0},
+  'smiles': 'C=C1C(=O)Oc2c1cn1[nH]c(-c3cccc(-c4ccc5ccc(C(=N)N)cc5c4)c3)cc21',
+  'transformed_score': 11.0},
+ {'bo_iter': 1,
+  'predictions': {'acq': 19.565860748291016,
+                  'mu': 13.319511413574219,
+                  'pred_error_in_stds': 2.2725470147845876,
+                  'std': 0.6246345639228821},
+  'predictions_after_fit': {'mu': 12.81908893585205,
+                            'std': 0.49765148758888245},
+  'raw_score': {'EGFR': -12.2, 'FGFR1': -11.9, 'KDR': -13.8},
+  'smiles': 'O=C(Nc1ccc(-c2cccc(-c3cc(-c4cccc5c4CCCC5)c[nH]3)c2)cc1)C1=CCN(C2N=CC=C(F)O2)C1',
+  'transformed_score': 11.9}]
+2024-03-26 20:32:41,800 - gp_bo - INFO - End of iter 1. Status update:
+	Batch scores (transformed): 11.2, 16.0, 16.0, 11.0, 11.9
+	Batch acquisition function values: 19.69, 19.61, 19.60, 19.58, 19.57
+	Acquisition function values of top known smiles : 16.87, 16.06, 15.96, 16.61, 15.44, 16.00, 15.98, 16.08, 16.62, 15.79
+	Top new scores so far: #1=16.000, #2=16.000, #3=11.900, #4=11.200, #5=11.000
+	Function calls so far: 5
+INFO:gp_bo:End of iter 1. Status update:
+	Batch scores (transformed): 11.2, 16.0, 16.0, 11.0, 11.9
+	Batch acquisition function values: 19.69, 19.61, 19.60, 19.58, 19.57
+	Acquisition function values of top known smiles : 16.87, 16.06, 15.96, 16.61, 15.44, 16.00, 15.98, 16.08, 16.62, 15.79
+	Top new scores so far: #1=16.000, #2=16.000, #3=11.900, #4=11.200, #5=11.000
+	Function calls so far: 5
+2024-03-26 20:32:41,800 - gp_bo - INFO - Start iter 2
+INFO:gp_bo:Start iter 2
+2024-03-26 20:32:42,843 - gp_bo - DEBUG - Maximizing acqusition function with 1000 starting SMILES.
+DEBUG:gp_bo:Maximizing acqusition function with 1000 starting SMILES.
+Traceback (most recent call last):
+  File "/home/alxfgh/CodingProjects/dockstring/src/mol_opt/run_bo_gp_exact.py", line 109, in <module>
+    bo_res = gp_bo.gp_bo_loop(
+  File "/home/alxfgh/CodingProjects/dockstring/src/bo/gp_bo.py", line 199, in gp_bo_loop
+    acq_smiles, acq_vals = maximize_acquisition_func_ga(
+  File "/home/alxfgh/CodingProjects/dockstring/src/bo/gp_bo.py", line 43, in maximize_acquisition_func_ga
+    _, smiles_2_acq_dict, _ = run_ga_maximization(
+  File "/home/alxfgh/CodingProjects/dockstring/src/graph_ga/graph_ga.py", line 209, in run_ga_maximization
+    population_scores = scoring_function(population_smiles, batch=True)
+  File "/home/alxfgh/CodingProjects/dockstring/src/function_utils.py", line 46, in __call__
+    outputs_not_cached = self._batch_f_eval(inputs_not_cached)
+  File "/home/alxfgh/CodingProjects/dockstring/src/function_utils.py", line 71, in _batch_f_eval
+    return self._f(input_list)
+  File "/home/alxfgh/CodingProjects/dockstring/src/bo/gp_bo.py", line 36, in _acq_func_smiles
+    mu_pred, var_pred = batch_predict_mu_var_numpy(gp_model, torch.as_tensor(fp_array))
+  File "/home/alxfgh/CodingProjects/dockstring/src/gp/gp_utils.py", line 26, in batch_predict_mu_var_numpy
+    output = gp_model(x[batch_start:batch_end])
+  File "/home/alxfgh/CodingProjects/BODock/.conda/lib/python3.10/site-packages/gpytorch/models/exact_gp.py", line 333, in __call__
+    ) = self.prediction_strategy.exact_prediction(full_mean, full_covar)
+  File "/home/alxfgh/CodingProjects/BODock/.conda/lib/python3.10/site-packages/gpytorch/models/exact_prediction_strategies.py", line 290, in exact_prediction
+    self.exact_predictive_covar(test_test_covar, test_train_covar),
+  File "/home/alxfgh/CodingProjects/BODock/.conda/lib/python3.10/site-packages/gpytorch/models/exact_prediction_strategies.py", line 342, in exact_predictive_covar
+    covar_correction_rhs = train_train_covar.solve(train_test_covar)
+  File "/home/alxfgh/CodingProjects/BODock/.conda/lib/python3.10/site-packages/linear_operator/operators/_linear_operator.py", line 2334, in solve
+    return func.apply(self.representation_tree(), False, right_tensor, *self.representation())
+  File "/home/alxfgh/CodingProjects/BODock/.conda/lib/python3.10/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/alxfgh/CodingProjects/BODock/.conda/lib/python3.10/site-packages/linear_operator/functions/_solve.py", line 53, in forward
+    solves = _solve(linear_op, right_tensor)
+  File "/home/alxfgh/CodingProjects/BODock/.conda/lib/python3.10/site-packages/linear_operator/functions/_solve.py", line 17, in _solve
+    return linear_op.cholesky()._cholesky_solve(rhs)
+  File "/home/alxfgh/CodingProjects/BODock/.conda/lib/python3.10/site-packages/linear_operator/operators/triangular_linear_operator.py", line 78, in _cholesky_solve
+    res = self._tensor._cholesky_solve(rhs=rhs, upper=upper)
+  File "/home/alxfgh/CodingProjects/BODock/.conda/lib/python3.10/site-packages/linear_operator/operators/dense_linear_operator.py", line 38, in _cholesky_solve
+    return torch.cholesky_solve(rhs, self.to_dense(), upper=upper)
+KeyboardInterrupt
