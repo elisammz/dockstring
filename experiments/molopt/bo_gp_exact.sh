@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 pip install botorch rdkit dockstring
-objective_arr=("GFR" "KDR" "EGFR" "IGF1R")
+objective_arr=("EGFR" "IGF1R" "FGFR1" "KDR")
 method_name="bo_gp_exact"
 max_func_calls="3"
 
